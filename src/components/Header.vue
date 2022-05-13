@@ -8,7 +8,7 @@
       </div>
       <div class="dx">
         <ul class="d-flex justify-content-between align-items-center">
-          <li :key="" v-for="(Menulink, index) in MenuLinks" class="attivo">Comics</li>
+          <li :key="`menu-${index}`" v-for="(Menulink, index) in MenuLinks" :class="Menulink.attivo ">{{Menulink.nome}}</li>
         </ul>
       </div>
 
@@ -23,40 +23,45 @@ export default {
     return{
       MenuLinks: [
         {
-          nome: "Comics",
+          nome: "Characters",
           link: "#",
-          attivo: false,
+          attivo: "",
         },
         {
           nome: "Comics",
           link: "#",
-          attivo: false,
+          attivo: "",
         },
         {
-          nome: "Comics",
+          nome: "Movies",
           link: "#",
-          attivo: true,
+          attivo: "attivo",
         },
         {
-          nome: "Comics",
+          nome: "TV",
           link: "#",
-          attivo: false,
+          attivo: "",
         },
         {
-          nome: "Comics",
+          nome: "Games",
           link: "#",
-          attivo: false,
+          attivo: "",
         },
         {
-          nome: "Comics",
+          nome: "Collectibles",
           link: "#",
-          attivo: false,
+          attivo: "",
         },
         {
-          nome: "Comics",
+          nome: "Videos",
           link: "#",
-          attivo: false,
+          attivo: "",
         },
+        {
+          nome: "Fans",
+          link: "#",
+          attivo: "",
+        }
       ]
     }
   }

@@ -3,8 +3,14 @@
 <div class="footer">
   <div class="Up d-flex align-items-center">
     <!-- BLOCCO ICONE-->
-    <div class="container align-items-center justify-content-center">
-      icone
+    <div class="container d-flex align-items-center justify-content-around">
+      <ul class="menu">
+            <li><img src="@/img/buy-comics-digital-comics.png" alt="1"> DIGITAL COMICS</li>
+            <li><img src="@/img/buy-comics-merchandise.png" alt="2"> DIGITAL COMICS</li>
+            <li><img src="@/img/buy-comics-shop-locator.png" alt="3"> DIGITAL COMICS</li>
+            <li><img src="@/img/buy-comics-subscriptions.png" alt="4"> DIGITAL COMICS</li>
+            <li><img src="@/img/buy-dc-power-visa.svg" alt="5">DIGITAL COMICS</li>
+          </ul>
     </div>
   </div>
 
@@ -81,11 +87,18 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="">
-        <h4>SIGN-UP</h4>
+        <a id="signUP" href="#">SIGN-UP NOW!</a>
       </div>
 
-      <div class="">
-        <h4>FOLLOW US</h4>
+      <div class="dxDown d-flex flex-row align-items-center">
+        <h5>FOLLOW US</h5>
+      
+            <img src="@/img/footer-facebook.png" alt="">
+            <img src="@/img/footer-periscope.png" alt="">
+            <img src="@/img/footer-pinterest.png" alt="">
+            <img src="@/img/footer-twitter.png" alt="">
+            <img src="@/img/footer-youtube.png" alt="">
+        
       </div>
 
     </div>
@@ -109,10 +122,26 @@ export default {
   color: white;
 }
 
+//BLOCCO ICONE---------
+
 .Up{
   background-color: #0282F9;
   height: 100px;
 }
+
+.Up ul li, .Down ul li{
+  list-style: none;
+  display: inline;
+  font-size: 16px;
+}
+
+.Up img{
+  height: 75px;
+  
+  padding: 20px;
+}
+
+//BLOCCO MENU FOOTER---------
 
 .Mid{
   background-image: url(@/img/footer-bg.jpg);
@@ -145,11 +174,29 @@ export default {
   height: 400px;
 }
 
+//FOOTER BASSO---------
 .Down{
   background-color: #303030;
   height: 80px;
 }
 
+#signUP{
+  color: white;
+  border: 3px solid #0282F9;
+  padding: 10px;
+}
 
+.Down h5{
+  color: #0282F9;
+  font-weight: 500;
+}
+
+.dxDown img{
+  padding: 5px
+}
+
+.dxDown h5{
+  margin: 0;
+}
 
 </style>
