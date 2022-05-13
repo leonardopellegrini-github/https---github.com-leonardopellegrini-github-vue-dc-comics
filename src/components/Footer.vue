@@ -10,11 +10,67 @@
 
   <div class="Mid d-flex align-items-center">
     <!-- BLOCCO MENU FOOTER-->
-    <div class="footer container">
-      <div class="col-2 SxMenu">
+    <div class="container">
+      <div class="row justify-content-between">
 
-      </div>
-      <div class="col-6 DxMenu">
+        <div class="col-2 SxMenu d-flex flex-wrap flex-column">
+
+          <h5 class="title">DC COMICS</h5>
+          <ul class="menu">
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+          </ul>
+
+          <h5 class="title">DC COMICS</h5>
+          <ul class="menu">
+            <li>Menu</li>
+            <li>Menu</li>
+          </ul>
+
+        </div>
+
+        <div class="col SxMenu d-flex flex-wrap flex-column">
+          
+          <h5 class="title">SHOP</h5>
+          <ul class="menu">
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+          </ul>
+
+        </div>
+
+        <div class="col SxMenu d-flex flex-wrap flex-column">
+          
+          <h5 class="title">SHOP</h5>
+          <ul class="menu">
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+          </ul>
+
+        </div>
+
+        <div class="col-6 DxMenu">
+
+        </div>
 
       </div>
     </div>
@@ -24,11 +80,11 @@
      <!--FOOTER BASSO-->
     <div class="container d-flex justify-content-between align-items-center">
 
-      <div class="sx">
+      <div class="">
         <h4>SIGN-UP</h4>
       </div>
 
-      <div class="dx">
+      <div class="">
         <h4>FOLLOW US</h4>
       </div>
 
@@ -60,17 +116,33 @@ export default {
 
 .Mid{
   background-image: url(@/img/footer-bg.jpg);
-  height: 100px;
+  height: 400px;
+  padding: 30px;
+}
+
+.menu{
+  margin: 0;
 }
 
 .SxMenu{
-  background-color: red;
-  height: 10px;
+  padding-top: 30px
+}
+
+.SxMenu ul li{
+   list-style: none;
+   color: #7B7B7B;
+   font-weight: 400;
+}
+.SxMenu ul{
+   padding: 0;
+   padding:10px 0px;
 }
 
 .DxMenu{
-  background-color: blue;
-  height: 10px;
+  background-image: url(@/img/dc-logo-bg.png);
+  background-size: cover;
+  background-position: right;
+  height: 400px;
 }
 
 .Down{
