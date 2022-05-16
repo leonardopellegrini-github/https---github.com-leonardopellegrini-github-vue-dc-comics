@@ -15,7 +15,15 @@
       </div>
 
       <div :key="`immagini-${indice}`" v-for="(immaginiData, indice) in immaginiDati" class="singleCard">
+        <div class="overlay">
+          <div class="text">
+            <h5>{{immaginiData.series}}</h5>
+            <h5>{{immaginiData.price}}</h5>
+            <h5>{{immaginiData.type}}</h5>
+          </div>
+       </div>
         <img :src="immaginiData.thumb" alt="1">
+        
         <h4>{{immaginiData.series}}</h4>
       </div>
       
@@ -170,6 +178,34 @@ export default {
   margin-top: 10px;
   max-width: 150px;
 }
+
+//hover
+
+.singleCard:hover .overlay {
+  opacity: 1;
+}
+
+.overlay{
+  position: absolute;
+  width: 150px; 
+  height: 150px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4a4a4a;
+}
+
+.text{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  h5{
+    font-size: 15px;
+  }
+}
+
 
 // BOTTONE LOAD
 
