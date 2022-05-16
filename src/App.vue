@@ -27,7 +27,14 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
 *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 auto;
+}
+
+body{
   font-family: 'Open Sans', sans-serif;
 }
 

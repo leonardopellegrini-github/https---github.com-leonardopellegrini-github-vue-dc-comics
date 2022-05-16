@@ -1,6 +1,6 @@
 <template>
   
-  
+    
     <div class="head container d-flex justify-content-between align-items-center">
 
       <div class="sx">

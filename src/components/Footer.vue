@@ -126,7 +126,7 @@ export default {
 
 .Up{
   background-color: #0282F9;
-  height: 100px;
+  height: 25%;
 }
 
 .Up ul li, .Down ul li{
@@ -145,8 +145,7 @@ export default {
 
 .Mid{
   background-image: url(@/img/footer-bg.jpg);
-  height: 400px;
-  padding: 30px;
+  height: 45%;
 }
 
 .menu{
